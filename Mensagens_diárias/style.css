@@ -43,7 +43,9 @@ div{
 }
 P{
     width: 500px;
-    font-family: [[[[]]]];
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-indent: 50px;
 }
 
 h1{ text-align: center;}
