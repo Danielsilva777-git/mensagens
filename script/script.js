@@ -30,7 +30,8 @@ const dias_da_semana  = {
     Sexta: "",
     Sábado: "",
     Domingo: " Para se receber a instrução do entendimento, a justiça, o juízo e a eqüidade, Para dar aos simples, prudência, e aos moços, conhecimento e bom siso; O sábio ouvirá e crescerá em conhecimento, e o entendido adquirirá sábios conselhos;  Para entender os provérbios e sua interpretação; as palavras dos sábios e as suas proposições. O temor do Senhor é o princípio do conhecimento; os loucos desprezam a sabedoria e a instrução.",
-}
+    Segunda:"Até quando, insensatos, amareis a tolice, e os tolos odiarão a ciência? Convertei-vos às minhas admoestações, espalharei sobre vós o meu espírito, ensinar-vos-ei minhas palavras. Uma vez que recusastes o meu chamado e ninguém prestou atenção quando estendi a mão, uma vez que negligenciastes todos os meus conselhos e não destes ouvidos às minhas admoestações,",
+}   
 
 let day = dias[hoje]
 res.innerHTML = dias_da_semana[day]
