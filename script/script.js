@@ -24,6 +24,21 @@ h2.innerText = `Hoje é ${dias[hoje]}-feira`}else{
 }
 
 
+fetch("script/versiculos.json")
+.then(response => response.json())
+.then(data =>{
+    const day = "Quarta"
+    const versiculo = data[day] || "Versículo não encoontrado";
+    document.getElementById("res").textContent = versiculo
+})
+.catch(error =>{
+    res.innerHTML = "Arquivo JSON não encontrado"
+})
+
+/*let day = dias[hoje]
+res.innerHTML = dias_da_semana[day]
+
+
 const dias_da_semana  = {
     Quarta: "Deitar-me faz em verdes pastos, guia-me mansamente a águas tranqüilas ",
     Quinta: "Refrigera a minha alma; guia-me pelas veredas da justiça, por amor do seu nome   Ainda que eu andasse pelo vale da sombra da morte, não temeria mal algum, porque tu estás comigo; a tua vara e o teu cajado me consolam.",
@@ -33,6 +48,10 @@ const dias_da_semana  = {
     Segunda:"Até quando, insensatos, amareis a tolice, e os tolos odiarão a ciência? Convertei-vos às minhas admoestações, espalharei sobre vós o meu espírito, ensinar-vos-ei minhas palavras. Uma vez que recusastes o meu chamado e ninguém prestou atenção quando estendi a mão, uma vez que negligenciastes todos os meus conselhos e não destes ouvidos às minhas admoestações,",
 }   
 
-let day = dias[hoje]
-res.innerHTML = dias_da_semana[day]
 
+
+
+
+
+
+*/
