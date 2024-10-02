@@ -33,6 +33,6 @@ const dias_da_semana  = {
     Segunda:"Até quando, insensatos, amareis a tolice, e os tolos odiarão a ciência? Convertei-vos às minhas admoestações, espalharei sobre vós o meu espírito, ensinar-vos-ei minhas palavras. Uma vez que recusastes o meu chamado e ninguém prestou atenção quando estendi a mão, uma vez que negligenciastes todos os meus conselhos e não destes ouvidos às minhas admoestações,",
 }   
 
+
 let day = dias[hoje]
 res.innerHTML = dias_da_semana[day]
-
