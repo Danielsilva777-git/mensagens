@@ -28,7 +28,7 @@ fetch("script/versiculos.json")
 .then(response => response.json())
 .then(data =>{
     const day = dias[hoje]
-    const versiculo = data[day] || "Versículo não encoontrado";
+    const versiculo = data[day] || "Versículo não encontrado";
     document.getElementById("res").textContent = versiculo
 })
 .catch(error =>{
